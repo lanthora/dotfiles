@@ -1,0 +1,12 @@
+[user]
+	email = nierunjie@gmail.com
+	name = Lanthora
+[pull]
+        rebase = false
+[core]
+        editor = vim
+[merge]
+        conflictstyle = diff3
+	ff = false
+[mergetool]
+        prompt = false
