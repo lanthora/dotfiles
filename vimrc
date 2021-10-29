@@ -21,8 +21,6 @@ set scrolloff=5
 set fileformats=unix,dos
 " 再长都不换行显示
 set nowrap
-" 突出显示当前列
-set cursorcolumn
 
 set laststatus=2
 set backspace=indent,eol,start
