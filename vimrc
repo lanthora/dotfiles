@@ -6,8 +6,6 @@ set number
 set expandtab
 " 不适用vi键盘 "
 set nocompatible
-" 突出显示当前行 "
-set cursorline
 " 自动缩进 "
 set autoindent
 " Tab键的宽度 "
@@ -19,7 +17,7 @@ set shiftwidth=4
 set scrolloff=5
 " 自动判断换行格式 "
 set fileformats=unix,dos
-" 再长都不换行显示
+" 不换行显示
 set nowrap
 
 set laststatus=2
@@ -27,7 +25,7 @@ set backspace=indent,eol,start
 
 if has("autocmd")
     autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-    autocmd BufWritePost *.h,*.c,*.cc,*.cpp,*.py exe "Autoformat"
+    autocmd BufWritePost *.py exe "Autoformat"
     autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 endif
 
@@ -49,3 +47,4 @@ match ErrorMsg '^\(<\||\|=\|>\)\{7\}\([^=].\+\)\?$'
 
 let g:formatdef_llvm = '"clang-format --style=LLVM"'
 let g:formatters_cpp = ['llvm']
+
