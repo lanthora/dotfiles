@@ -2,10 +2,10 @@
 	email = lanthora@outlook.com
 	name = lanthora
 [pull]
-        rebase = false
+	rebase = true
 [core]
-        editor = vim
+	editor = vim
 [merge]
-        conflictstyle = diff3
+	conflictstyle = diff3
 [mergetool]
-        prompt = false
+	prompt = false
