@@ -25,7 +25,7 @@ set backspace=indent,eol,start
 
 if has("autocmd")
     autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-    autocmd BufWritePost *.py exe "Autoformat"
+    autocmd BufWritePost *.h,*.c,*.cc,*.cpp,*.py exe "Autoformat"
     autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 endif
 
@@ -45,6 +45,6 @@ highlight CursorLine   cterm=NONE ctermbg=darkgray guibg=NONE guifg=NONE
 " 高亮代码冲突标记
 match ErrorMsg '^\(<\||\|=\|>\)\{7\}\([^=].\+\)\?$'
 
-let g:formatdef_llvm = '"clang-format --style=LLVM"'
+let g:formatdef_llvm = '"clang-format --style=file"'
 let g:formatters_cpp = ['llvm']
 
