@@ -1,11 +1,9 @@
 all: git vim zsh
 
 git:
-	ln -s $(PWD)/gitconfig $(HOME)/.gitconfig
-
+	@scripts/git.sh
 vim:
-	ln -s $(PWD)/vimrc $(HOME)/.vimrc
-
+	@scripts/vim.sh
 zsh:
-	ln -s $(PWD)/zshrc $(HOME)/.zshrc
+	@scripts/zsh.sh
 
