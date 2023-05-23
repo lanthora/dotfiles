@@ -11,3 +11,7 @@
 	prompt = false
 [push]
 	autoSetupRemote = true
+[fetch]
+	prune = true
+[init]
+	defaultBranch = master
