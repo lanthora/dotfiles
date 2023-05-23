@@ -14,7 +14,6 @@ fi
 setopt hist_ignore_all_dups
 
 export EDITOR="/usr/bin/vim"
-export PATH="/usr/lib/node_modules/corepack/shims:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
