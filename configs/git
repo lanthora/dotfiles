@@ -15,3 +15,5 @@
 	prune = true
 [init]
 	defaultBranch = master
+[pager]
+	branch = false
