@@ -14,6 +14,9 @@ fi
 setopt hist_ignore_all_dups
 
 export EDITOR="/usr/bin/vim"
+export ANDROID_HOME=/opt/android-sdk
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh

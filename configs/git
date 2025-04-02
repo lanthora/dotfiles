@@ -1,6 +1,3 @@
-[user]
-	email = lanthora@outlook.com
-	name = lanthora
 [pull]
 	rebase = true
 [core]
